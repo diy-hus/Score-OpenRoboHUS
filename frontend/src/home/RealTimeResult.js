@@ -57,7 +57,6 @@ export default class RealTimeResult extends React.Component {
           if (currentRoundInfo.winner === 'B') {
             blueWin = true;
           }
-			console.log(currentRoundInfo.winner);
           this.win.play();
           currentRoundInfo.winner = '';
         }
@@ -85,7 +84,7 @@ export default class RealTimeResult extends React.Component {
           </source>
         </audio>
         <Row>
-          <Col style={{textAlign: 'center', marginTop: '-5rem'}}>
+          <Col style={{textAlign: 'center', marginTop: '-9rem'}}>
             <div style={{fontSize: '8rem'}}>
               <span style={{color: 'red', fontFamily: 'utmBebas'}}>OPEN</span>
               <span style={{color: 'blue', fontFamily: 'utmBebas'}}> ROBO</span>
@@ -131,7 +130,7 @@ export default class RealTimeResult extends React.Component {
             </Row>
           </Col>
           <Col xs={4}>
-            <div style={{marginLeft: '3rem'}}>
+            <div style={{marginLeft: '3rem', marginTop: '-1rem'}}>
               <th className={cx(s.teamName, s.greenTeamText)}> BLUE TEAM</th>
               <div className={s.resultTitle}>AUTOMATIC:
                 <span className={s.resultValue} style={{marginLeft: '1rem'}}>{blueAutoScore}</span>
