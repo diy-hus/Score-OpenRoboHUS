@@ -25,7 +25,6 @@ export default class RealTimeResult extends React.Component {
     }
 
     if (this.timeout !== undefined) {
-		console.log(currentRoundInfo);
       if (currentRoundTimeLeft === 0) this.timeout.play();
 	  if (currentRoundTimeLeft === 180000) this.timeout.play();
     }
@@ -58,7 +57,7 @@ export default class RealTimeResult extends React.Component {
           if (currentRoundInfo.winner === 'B') {
             blueWin = true;
           }
-
+			console.log(currentRoundInfo.winner);
           this.win.play();
           currentRoundInfo.winner = '';
         }

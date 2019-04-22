@@ -85,7 +85,7 @@ export class AppService {
 
                 AppModel.stop();
 
-                let winner = AppModel.dataBlue.getTotalScore() > AppModel.dataRed.getTotalScore() ? 'G' : 'R';
+                let winner = AppModel.dataBlue.getTotalScore() > AppModel.dataRed.getTotalScore() ? 'B' : 'R';
 
                 this.dispatchCurrentRoundInfoToFrontend(winner);
 
