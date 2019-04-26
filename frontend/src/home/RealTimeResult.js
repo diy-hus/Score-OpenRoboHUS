@@ -86,10 +86,10 @@ export default class RealTimeResult extends React.Component {
         <Row>
           <Col style={{textAlign: 'center', marginTop: '-9rem'}}>
             <div style={{fontSize: '8rem'}}>
-              <span style={{color: 'red', fontFamily: 'utmBebas'}}>OPEN</span>
-              <span style={{color: 'blue', fontFamily: 'utmBebas'}}> ROBO</span>
-              <span style={{color: 'white', fontFamily: 'utmBebas'}}>HUS</span>
-              <span style={{color: 'green', fontFamily: 'utmBebas'}}> 2019</span></div>
+              <span style={{color: 'white', fontFamily: 'utmBebas'}}>OPEN</span>
+              <span style={{color: 'red', fontFamily: 'utmBebas'}}> ROBO</span>
+              <span style={{color: 'red', fontFamily: 'utmBebas'}}>HUS</span>
+              <span style={{color: 'yellow', fontFamily: 'utmBebas'}}> 2019</span></div>
           </Col>
         </Row>
         <Row>
@@ -100,20 +100,20 @@ export default class RealTimeResult extends React.Component {
             </div>
           </Col>
         </Row>
-        <Row style={{marginTop: '3rem'}}>
+        <Row style={{marginTop: '1rem'}}>
           <Col xs={4}>
             <div style={{marginLeft: '3rem', marginTop: '-1rem'}}>
               <th className={cx(s.teamName, s.redTeamText)}> red TEAM</th>
               <div className={s.resultTitle}>AUTOMATIC:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{redAutoScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#b81c23'}}>{redAutoScore}</span>
               </div>
               <div className={s.resultTitle}>MANUAL:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{redManualScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#b81c23'}}>{redManualScore}</span>
               </div>
               <div className={s.resultTitle}>TOTAL:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{redScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#b81c23'}}>{redScore}</span>
               </div>
-              <div style={{backgroundColor: 'rgba(0, 0, 0,0.5)', width: '35rem', height: '25rem', marginTop: '1rem'}}/>
+              <div style={{backgroundColor: 'rgba(0, 0, 0,0.5)', width: '35rem', height: '23rem', marginTop: '1rem'}}/>
             </div>
           </Col>
           <Col xs={4}>
@@ -133,15 +133,15 @@ export default class RealTimeResult extends React.Component {
             <div style={{marginLeft: '3rem', marginTop: '-1rem'}}>
               <th className={cx(s.teamName, s.greenTeamText)}> BLUE TEAM</th>
               <div className={s.resultTitle}>AUTOMATIC:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{blueAutoScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#2148ff'}}>{blueAutoScore}</span>
               </div>
               <div className={s.resultTitle}>MANUAL:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{blueManualScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#2148ff'}}>{blueManualScore}</span>
               </div>
               <div className={s.resultTitle}>TOTAL:
-                <span className={s.resultValue} style={{marginLeft: '1rem'}}>{blueScore}</span>
+                <span className={s.resultValue} style={{marginLeft: '1rem',backgroundColor: '#2148ff'}}>{blueScore}</span>
               </div>
-              <div style={{backgroundColor: 'rgba(0, 0, 0,0.5)', width: '35rem', height: '25rem', marginTop: '1rem'}}/>
+              <div style={{backgroundColor: 'rgba(0, 0, 0,0.5)', width: '35rem', height: '23rem', marginTop: '1rem'}}/>
             </div>
           </Col>
         </Row>
